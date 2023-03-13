@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{
+            display:grid;
+            grid-template-columns: repeat(12, [col] 1fr);
+            gap: 10px 5px;  
+        }
+        main section{
+            background-color: bisque;
+        }
+        .col-4{
+          
+            grid-column: span 4;
+            /* column-gap:1em; */
+        }
+        .col-2{
+          
+            grid-column: span 2;
+        }
+        .col-3{
+          
+          grid-column: span 3;
+      }
+      .col-5{
+          
+          grid-column: span 5;
+      }
+      .col-5{
+          
+          grid-column: span 5;
+      }
+      .col-6{
+          
+          grid-column: span 6;
+      }
+      .col-7{
+          
+          grid-column: span 7;
+      }
+      .col-8{
+          
+          grid-column: span 8;
+      }
+      .col-9{
+          
+          grid-column: span 9;
+      }
+      .col-10{
+          
+          grid-column: span 10;
+      }
+      .col-11{
+          
+          grid-column: span 11;
+      }
+      .col-12{
+          
+          grid-column: span 12;
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Responsive grid</h1>
+    </header>
+    <main>
+        <section>
+            <article class="col-4"><h2>article</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, maiores?</p>
+            </article>
+            <div>div</div>
+        </section>
+        <section>1
+            <section>imbriqued section</section>
+        </section>
+        <section class="col-3">2</section>
+        <section class="col-1">item 1</section>
+        <section class="col-2">item 2</section>
+        <section class="col-3">item 3</section>
+        <section class="col-4">item 4</section>
+        <section class="col-5">item 5</section>
+        <section class="col-6">item 6</section>
+        <section class="col-7">item 7</section>
+        <section class="col-8">item 8</section>
+        <section class="col-9">item 9</section>
+        <section class="col-10">item 10</section>
+        <section class="col-11">item 11</section>
+        <section class="col-12">item 12</section>
+    </main>
+</body>
+</html>
